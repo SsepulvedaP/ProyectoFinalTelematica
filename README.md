@@ -8,7 +8,9 @@ $ git clone https://github.com/Tumaco/ProyectoFinalTelematica.git
   sudo docker build -t proyectofinal:01 .
 
 2. Para ejecturar el servicio se usa el siguiente comando:
-  sudo docker run -it -p 80:80 proyectofinal:v01 python3 app.py Nota: El parametro -it es para ver de forma interactiva el proceso e interactuar con la                                                                           maquina por comandos, aunque se puede cambiar por el parametro -d para que corra por                                                                       medio de memoria ram o sea por background                                                                 
+  sudo docker run -it -p 80:80 proyectofinal:01 python3 app.py 
+
+Nota: El parametro -it es para ver de forma interactiva el proceso e interactuar con la                                                                           maquina por comandos, aunque se puede cambiar por el parametro -d para que corra por                                                                       medio de memoria ram o sea por background                                                                 
   
 
 
