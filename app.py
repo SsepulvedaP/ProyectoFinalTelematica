@@ -8,13 +8,14 @@ app = Dash(__name__)
 
 
 #Cargar la base de datos
-  def serve_layout():
+def serve_layout():
   df = pd.read_excel('datanoticias.xlsx')
   return html.Div([html.H1(df['Bienvenido a la seccion de noticias Barquituma']),
                        html.Div(df['Noticia 1:'])
                        html.Div(df['Noticia 2:'])])
 #funcion principal
 app.layout = serve_layout
+
 if __name__ == '__main__':
   #Cargar el objeto principal a todas las interfaces de red en el puerto 80
   app.run_server(host='0.0.0.0',port=80)
