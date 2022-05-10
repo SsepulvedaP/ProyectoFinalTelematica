@@ -10,9 +10,9 @@ app = Dash(__name__)
 #Cargar la base de datos
 def serve_layout():
   df = pd.read_excel('datanoticias.xlsx')
-  return html.Div([html.H1(df['Bienvenido a la seccion de noticias Barquituma']),
-                       html.Div(df['Noticia 1:'])
-                       html.Div(df['Noticia 2:'])])
+  return html.Div([html.H1(df['Titulo']),
+                       html.Div(df['Noticia1'])
+                       html.Div(df['Noticia2'])])
 #funcion principal
 app.layout = serve_layout
 
