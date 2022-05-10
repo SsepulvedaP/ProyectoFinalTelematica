@@ -11,7 +11,7 @@ app = Dash(__name__)
 def serve_layout():
   df = pd.read_excel('datanoticias.xlsx')
   return html.Div([html.H1(df['Titulo']),
-                       html.Div(df['Noticia1'])
+                       html.Div(df['Noticia1']),
                        html.Div(df['Noticia2'])])
 #funcion principal
 app.layout = serve_layout
